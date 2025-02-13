@@ -105,3 +105,6 @@ cmd.packadd('cfilter') -- Allows filtering the quickfix list with :cfdo
 vim.g.sqlite_clib_path = require('luv').os_getenv('LIBSQLITE')
 
 vim.cmd.colorscheme "catppuccin-mocha"
+
+vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, { "ExtraGroup" })
+-- vimscript: let g:transparent_groups = extend(get(g:, 'transparent_groups', []), ["ExtraGroup"])
